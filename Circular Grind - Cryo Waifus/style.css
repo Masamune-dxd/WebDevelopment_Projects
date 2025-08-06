@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #D5E3E8;
+  background-image: url("https://lh3.googleusercontent.com/fife/ALs6j_Em4A0nk2DwuGAZjURW1KV3-tv55VCbEaHMYPn9dVlO7hzyG_h1xSpnlmG4G-MJ985XuFQYr7dcPbG_EHQ_IjyMEy8xCgojha0Zcl3nXyZedR5DNpG1CrEWwxWZJYAdXPKED9VzkfvWUwWxOu2RgDWcccJ1qpi645MJnQoNxVHF-5jD4QnzEZ_w5k2l5282KI5c370elUtpzZBTq2Dgt47LdWtEy_uCbpMzAUtIw5xDcuTC-zWLSZMVSqCiP6Ept-9h27-4QQl_AFpIwUGlnoRZpXGaZxly_vqnXQJSWI6_nxo_WhaXCb4SxYsg0DCnW_u-9H1HuB3d-lIP1wWNzYKz_2rrNiYtguESdJTDkPEgMiQp49sCcNZEIlSEjHGILg-OVgEvXfmBneaiMZoQetbX2hmkvATnTx47c5rIXqJSsuDUKgEHJmr5-54GB_ZSXFQXSxOy1ieSZ869q-fpSGE9yM-CogjwZ778DtVVSeSVfjjSua5A4BgyiBVPFK_Xjd9UAbJ99vjic3tDsn1KX-MkkYhoWEWWiyRMEMFG9mJv25PHDDfHwP2EA9V9nGl6OOT8IYLNQUqCpPrLFCYeD1lmQu7WEft4HpqWaYrX4N3hsb8BTLlHTbDx3sgtXEo2vFJt7v9BZeUeCxeMK-OFZMAKb9mmNPsQyrx_S0SDWFWSwa-04TbYjYuA7nT94gE0iF7sdbJ5WsXSPwrp_0GZ9gsLNqjKYZic5Bdg2abInatpWtVbnqckomfbk4-hSWYyJ1pFpQR8DoA265I4UjjfNwJewIM5F3ZtBBbiCSc24_u_FqyqOYzCGrlIBIlenBisw80GXgD5dOb78uWDCy1mYgwZOdGWXCAiWqAUelFk2Xn4SkmpdO6qpnjKBUYA1IgEirh4M_66VWlAFqFxV2xeJik5NupS7L7d0yMRvzlfkpHQB_RPm_E909N8d8G-ekTjKCRj7wTgtBBf-ah74D7WpnNd9XnWVqbR4Cp1t_TQivUCkxhdhLZDc9qTh8gy6XPK6XjcA_DUsskReNW-NbzJMM-FRvy92xv1ckEKoKxPuBnShRRlgOEu8XkREj4sPli8YYBlF9zJlpmLmZN4bYN_2VbNPPxgYUmzWb1455FGTbagjY-dYdf_yRjLYfCZ-tP6jFh8cJ37fXR7LN7UbKYY-6EXrtk5sGr31nKSjHWX9tGKncy7V25e2z43h8sr_oTFtlOcEmVSPJz-wQt0ZASt2OyHWmJ_WeYbBOA3lUpPWCUxCjUx0BS4OWImnV5MrbXx11hz2tnlzt1TpxzlYyLtaxLugH1MYtCm0i8R8rOAmbW0AMEHPmO_nN399QqJWUhMjCdOqShgZ44xZQfdJRXCI_G8avvC5R6fgjRUwPeZfgi0cDYvB7Qq=s1024");
+  background-size: cover;
+  background-position: center center;
+}
+
+.gallery {
+  --g: 8px;   /* the gap */
+  --s: 400px; /* the size */
+
+  display: grid;
+  border-radius: 50%;
+}
+.gallery > img {
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  transform: translate(var(--_x,0),var(--_y,0));
+  cursor: pointer;
+  font-size: 0;
+  z-index: 0;
+  transition: .3s, z-index 0s .3s;
+}
+.gallery img:hover {
+  font-size: var(--s);
+  z-index: 1;
+  transition: transform .2s, font-size .3s .2s, z-index 0s;
+}
+.gallery:hover img {
+  transform: translate(0,0);
+}
+.gallery > img:nth-child(1) {
+  clip-path: polygon(50% 50%,.5em 1.2em,0 1em,0 0,100% 0,100% 1em,calc(100% - .5em) 1.2em);
+  --_y: calc(-1*var(--g))
+}
+.gallery > img:nth-child(2) {
+  clip-path: polygon(50% 50%,calc(100% - 1.2em) 0.5em,calc(100% - 1em) 0,100% 0,100% 100%,calc(100% - 1em) 100%,calc(100% - 1.2em) calc(100% - .5em));
+  --_x: var(--g)
+}
+.gallery > img:nth-child(3) {
+  clip-path: polygon(50% 50%,calc(100% - .5em) calc(100% - 1.2em),100% calc(100% - 1.2em),100% 100%,0 100%,0 calc(100% - 1em),.5em calc(100% - 1.2em));
+  --_y: var(--g)
+}
+.gallery > img:nth-child(4) {
+  clip-path: polygon(50% 50%,1.2em .5em,1em 0,0 0,0 100%,1em 100%,1.2em calc(100% - .5em));
+  --_x: calc(-1*var(--g))
+}
