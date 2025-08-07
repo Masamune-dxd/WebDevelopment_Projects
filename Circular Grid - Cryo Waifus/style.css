@@ -11,7 +11,7 @@ body {
 
 .gallery {
   --g: 8px;   /* the gap */
-  --s: 400px; /* the size */
+  --s: 450px; /* the size */
 
   display: grid;
   border-radius: 50%;
