@@ -1,17 +1,17 @@
 const images = [
-	{ title: "Joshua Hibbert", url: "https://picsum.photos/id/870/600/1000" },
-	{ title: "Joshua Earle", url: "https://picsum.photos/id/883/600/1000" },
-	{ title: "Antoine Beauvillain", url: "https://picsum.photos/id/478/600/1000" },
-	{ title: "Greg Rakozy", url: "https://picsum.photos/id/903/600/1000" },
-	{ title: "Ramiro Checchi", url: "https://picsum.photos/id/503/600/1000" },
-	{ title: "Christian Holzinger", url: "https://picsum.photos/id/521/600/1000" },
-	{ title: "Jay Mantri", url: "https://picsum.photos/id/634/600/1000" },
-	{ title: "Sylwia Bartyzel", url: "https://picsum.photos/id/241/600/1000" },
-	{ title: "Fabio Rose", url: "https://picsum.photos/id/261/600/1000" },
-	{ title: "Fré Sonneveld", url: "https://picsum.photos/id/314/600/1000" },
-	{ title: "Louis Pellissier", url: "https://picsum.photos/id/318/600/1000" },
-	{ title: "Mayur Gala", url: "https://picsum.photos/id/815/600/1000" },
-	{ title: "Anthony DELANOIX", url: "https://picsum.photos/id/742/600/1000" }
+	{ title: "Genesis", url: "img/phone1.png" },
+	{ title: "Impetus", url: "img/phone2.png" },
+	{ title: "Acceleration", url: "img/phone3.png" },
+	{ title: "Recursion", url: "img/phone4.png" },
+	{ title: "Oracle", url: "img/phone5.png" },
+	{ title: "Metacognition", url: "img/phone6.png" },
+	{ title: "Irrationality", url: "img/phone7.png" },
+	{ title: "Terminus", url: "img/phone8.png" },
+	{ title: "Transcendence", url: "img/phone9.png" },
+	{ title: "Dimension", url: "img/phone10.png" },
+	{ title: "Diffraction", url: "img/phone11.png" },
+	{ title: "Assumption", url: "img/phone12.png" },
+	{ title: "Chroma", url: "img/phone13.png" }
 ];
 
 const FLIP_SPEED = 750;
