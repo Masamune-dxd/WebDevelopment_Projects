@@ -101,7 +101,7 @@ body {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 21, 0.7), rgba(0, 0, 21, 0.7)),
-                url("https://spaces.w3schools.com/images/HVYepJYeHdQ.jpg");
+                url("img/gemini-generated-hero.png") no-repeat center center;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
