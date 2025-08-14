@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew & Bake - Coffee & Bakery Shop</title>
+    <title>Coffees and Pastries</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,9 +13,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-
                     <i class="fas fa-coffee"></i>
-                    <h1>Pastries & Coffees</h1>
+                    <h1>Coffees & Pastries</h1>
                 </div>
                 <div class="search-cart">
                     <div class="search-box">
@@ -59,6 +58,85 @@
     <div class="container">
         <div class="products-grid" id="productsGrid">
             <!-- Products will be dynamically inserted here -->
+             <!-- Coffee Example -->
+            <div class="product-card">
+                <div class="product-image coffee">
+                    <!-- Example product image for Espresso -->
+                    <img src="img/espresso.jpg"
+                        alt="Espresso" style="width:100%;height:200px;object-fit:cover;border-radius:15px 15px 0 0;">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Espresso</h3>
+                    <div class="product-price">$3.50</div>
+                    <button class="add-to-cart" data-id="1">
+                        <i class="fas fa-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Bread Example -->
+            <div class="product-card">
+                <div class="product-image bread">
+                    <!-- Example product image for Croissant -->
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+                        alt="Croissant" style="width:100%;height:200px;object-fit:cover;border-radius:15px 15px 0 0;">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.4</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Croissant</h3>
+                    <div class="product-price">$3.25</div>
+                    <button class="add-to-cart" data-id="13">
+                        <i class="fas fa-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Milk Tea Example -->
+            <div class="product-card">
+                <div class="product-image milktea">
+                    <!-- Example product image for Classic Milk Tea -->
+                    <img src="https://images.unsplash.com/photo-1519864601474-6e3d7b9e1a2e?auto=format&fit=crop&w=400&q=80"
+                        alt="Classic Milk Tea" style="width:100%;height:200px;object-fit:cover;border-radius:15px 15px 0 0;">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Classic Milk Tea</h3>
+                    <div class="product-price">$4.50</div>
+                    <button class="add-to-cart" data-id="5">
+                        <i class="fas fa-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Milkshake Example -->
+            <div class="product-card">
+                <div class="product-image milkshake">
+                    <!-- Example product image for Chocolate Milkshake -->
+                    <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?auto=format&fit=crop&w=400&q=80"
+                        alt="Chocolate Milkshake" style="width:100%;height:200px;object-fit:cover;border-radius:15px 15px 0 0;">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <span>4.6</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Chocolate Milkshake</h3>
+                    <div class="product-price">$5.50</div>
+                    <button class="add-to-cart" data-id="9">
+                        <i class="fas fa-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
