@@ -21,7 +21,7 @@ nav {
 }
 
 .nav-hidden {
-  top: -100px;
+    top: -100px;
 }
 
 .nav-links {
@@ -33,11 +33,33 @@ nav {
     padding: 0 20px;
 }
 
-.nav-links .logo {
+.logo-link {
     display: flex;
     align-items: center; 
     gap: 10px;
+    text-decoration: none; 
+}
 
+.logo-link h4 {
+    position: relative;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    transition: all 0.3s ease;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 24, 131, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.logo-link:hover h4 {
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    opacity: 0.8;
+}
+
+.logo-link:hover h4::after {
+  opacity: 1;
 }
 
 .nav-logo {
@@ -47,14 +69,6 @@ nav {
     border-radius: 50%;
 }
 
-.nav-links .logo a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1; 
-}
-
 .nav-links ul {
     display: flex;
     gap: 15px;
@@ -62,18 +76,37 @@ nav {
 }
 
 .nav-links ul li a {
+    position: relative;
+    z-index: 1;
     text-decoration: none;
-    color: #fff;
+    color: whitesmoke;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 15px;
-    border-radius: 5px;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .nav-links ul li a:hover {
-    background: #fff;
-    color: royalblue;
+    color: whitesmoke;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 24, 131, 1) 50%, rgba(0, 212, 255, 1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.nav-links ul li a:hover::after {
+    opacity: 1;
 }
 
 /* HOME SECTION */
@@ -86,11 +119,23 @@ nav {
   justify-content: center;
   text-align: center;
   background-image: url("img/wallpaper.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x; 
+  background-position: 0 0; 
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: overlay;
+  overflow: hidden;
+
+  /* The animation property */
+  animation: slide-left 45s linear infinite;
+}
+
+@keyframes slide-left {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 0; 
+  }
 }
 
 .hero-content {
@@ -98,20 +143,26 @@ nav {
   padding: 20px;
 }
 
-.hero-content h1 {
+.hero-content h1 {  
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #fff;
+}
+
+.hero-content h1 span {
+  color: whitesmoke;
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 24, 131, 1) 50%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .hero-content h1 span:hover {
-  color: royalblue;
-  transition: all 0.3s ease;
+  color: transparent;
 }
 
 .hero-content .tagline {
   font-size: 1.5rem;
-  color: #fff;
+  color: whitesmoke;
   margin-bottom: 2rem;
 }
 
@@ -119,7 +170,7 @@ nav {
   display: inline-block;
   padding: 15px 30px;
   background-color: royalblue;
-  color: #fff;
+  color: whitesmoke;
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 600;
@@ -135,4 +186,25 @@ nav {
 }
 
 /* GAME SECTION */
+
+#game-section {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.game-container h2 {
+  font-size: 1.5rem;
+}
+
+.game-container h2, p {
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
 
