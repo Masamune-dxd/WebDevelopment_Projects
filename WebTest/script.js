@@ -18,3 +18,5 @@ window.addEventListener('scroll', () => {
     // Update the last scroll position
     lastScrollY = window.scrollY;
 });
+
+
