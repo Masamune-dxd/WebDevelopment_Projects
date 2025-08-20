@@ -126,7 +126,7 @@ nav {
   overflow: hidden;
 
   /* The animation property */
-  animation: slide-left 45s linear infinite;
+  animation: slide-left 48s linear infinite;
 }
 
 @keyframes slide-left {
@@ -233,7 +233,7 @@ nav {
     --carousel-item-width: 280px;
     --carousel-item-height: 450px;
     --carousel-item-gap: 2rem;
-    --clr-cta: rgb(0, 132, 209);
+    --clr-cta: rgb(27, 15, 204);
     
     position: relative;
     width: var(--carousel-width);
@@ -276,9 +276,9 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.25);
     padding-block-end: 1rem;
     border-radius: 10px;
-    background: white;
-    color: rgb(49, 65, 88);
-
+    background: #82828f;
+    background: linear-gradient(90deg, rgba(130, 130, 143, 1) 0%, rgba(39, 39, 48, 1) 100%);
+    color: rgb(214, 220, 235);
     will-change: transform;
     animation-name: marquee;
     animation-duration: var(--carousel-duration);
@@ -323,11 +323,14 @@ nav {
 
 .carousel > article p {
     margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
 }
 
 .carousel > article a {
     text-decoration: none;
     text-transform: lowercase;
+    background-color: whitesmoke;
     border: 1px solid var(--clr-cta);
     color: var(--clr-cta);
     border-radius: 3px;
@@ -339,7 +342,7 @@ nav {
 .carousel > article a:hover,
 .carousel > article a:focus-visible {
     background-color: var(--clr-cta);
-    color: white;
+    color: whitesmoke;
     outline: none;
 }
 
