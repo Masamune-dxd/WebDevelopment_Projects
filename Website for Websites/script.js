@@ -497,38 +497,38 @@ const websites = [
         icon: "fas fa-gamepad",
         color: "#e81c4f"
     },
-    {
-        name: "AdultFriendFinder",
-        url: "https://www.adultfriendfinder.com",
-        description: "Adult dating and social networking",
-        category: "adult",
-        icon: "fas fa-user-friends",
-        color: "#ff0000"
-    },
-    {
-        name: "Xvideos",
-        url: "https://www.xvideos.com",
-        description: "Adult video sharing platform",
-        category: "adult",
-        icon: "fas fa-video",
-        color: "#ff0000"
-    },
-    {
-        name: "Pornhub",
-        url: "https://www.pornhub.com",
-        description: "Adult video sharing platform",
-        category: "adult",
-        icon: "fas fa-video",
-        color: "#ff0000"
-    },
-    {
-        name: "OnlyFans",
-        url: "https://www.onlyfans.com",
-        description: "Subscription-based adult content platform",
-        category: "adult",
-        icon: "fas fa-user-lock",
-        color: "#ff0000"
-    },
+    // {
+    //     name: "AdultFriendFinder",
+    //     url: "https://www.adultfriendfinder.com",
+    //     description: "Adult dating and social networking",
+    //     category: "adult",
+    //     icon: "fas fa-user-friends",
+    //     color: "#ff0000"
+    // },
+    // {
+    //     name: "Xvideos",
+    //     url: "https://www.xvideos.com",
+    //     description: "Adult video sharing platform",
+    //     category: "adult",
+    //     icon: "fas fa-video",
+    //     color: "#ff0000"
+    // },
+    // {
+    //     name: "Pornhub",
+    //     url: "https://www.pornhub.com",
+    //     description: "Adult video sharing platform",
+    //     category: "adult",
+    //     icon: "fas fa-video",
+    //     color: "#ff0000"
+    // },
+    // {
+    //     name: "OnlyFans",
+    //     url: "https://www.onlyfans.com",
+    //     description: "Subscription-based adult content platform",
+    //     category: "adult",
+    //     icon: "fas fa-user-lock",
+    //     color: "#ff0000"
+    // },
 
 ];
 
